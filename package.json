@@ -1,0 +1,14 @@
+{
+  "name": "get-set-var",
+  "version": "0.1.0",
+  "description": "variable setter and getter command",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "get-set-var"
+  ],
+  "author": "Wang Xiaoqiang <xq21@vip.qq.com>",
+  "license": "ISC"
+}
