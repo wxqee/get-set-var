@@ -10,5 +10,9 @@
     "get-set-var"
   ],
   "author": "Wang Xiaoqiang <xq21@vip.qq.com>",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "split-json": "^1.7.5",
+    "through": "^2.3.6"
+  }
 }
