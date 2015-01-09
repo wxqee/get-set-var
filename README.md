@@ -1,6 +1,14 @@
 # get-set-var
 Getter and setter to variables for Linux like command line.
 
+# Install
+## installation with source code
+```
+$ git clone https://github.com/wxqee/get-set-var.git get-set-var
+$ cd get-set-var/
+$ npm install ./ -g
+```
+
 # Usage
 
 ## choose to use a db/database
