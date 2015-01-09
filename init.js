@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 var fs = require('fs'),
     split_json = require('split-json'),
     through = require('through');
