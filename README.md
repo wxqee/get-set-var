@@ -3,21 +3,19 @@ Getter and setter to variables for Linux like command line.
 
 # Usage
 
-## init a database/db 'test'
+## choose to use a db/database
+Set env *GSV_DB_NAME* can help to identify which db is about to use.
 ```
-xiwang@acx-xiwang:get-set-var$ GSV_DB_NAME=test node init.js
-/tmp/gsv-test-db.json has been inited for GSV_DB_NAME=>test
-```
-
-## get a var 'abc' from db 'test'
-```
-xiwang@acx-xiwang:get-set-var$ GSV_DB_NAME=test node index.js
-xiwang@acx-xiwang:get-set-var$ GSV_DB_NAME=test node index.js abc
+$ export GSV_DB_NAME=<db-name>
 ```
 
-## set and get a var 'abc' from db 'test'
+## init a database/db
 ```
-xiwang@acx-xiwang:get-set-var$ GSV_DB_NAME=test node index.js abc 123
-xiwang@acx-xiwang:get-set-var$ GSV_DB_NAME=test node index.js abc
-123
+$ node init.js
+```
+
+## get and set a var
+```
+$ node index.js <variable-to-get>
+$ node index.js <variable-to-set> <value>
 ```
