@@ -15,6 +15,9 @@ switch (process.argv.length) {
   case 3:
     vGet(process.argv[2]);
     break;
+  case 2:
+    vAll();
+    break;
   default:
     help();
     break;
@@ -22,9 +25,19 @@ switch (process.argv.length) {
 
 function help() {
   var message = 'Usage: \n';
+  message += '  $ ' + config.name + '  //<-- list keys\n';
   message += '  $ ' + config.name + ' <variable-to-get>\n';
   message += '  $ ' + config.name + ' <variable-to-set> <value>\n';
   console.log(message);
+}
+
+function vAll() {
+  fs.readFile(fileName, {encoding: 'utf-8'}, function (err, data) {
+    if (err) throw err;
+    JSON.parse(data, function(k, v) {
+      console.log(k);
+    });
+  });
 }
 
 function vSet(k, v) {
