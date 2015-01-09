@@ -19,11 +19,11 @@ $ export GSV_DB_NAME=<db-name>
 
 ## init a database/db
 ```
-$ node init.js
+$ get-set-var-init
 ```
 
 ## get and set a var
 ```
-$ node index.js <variable-to-get>
-$ node index.js <variable-to-set> <value>
+$ get-set-var <variable-to-get>
+$ get-set-var <variable-to-set> <value>
 ```
