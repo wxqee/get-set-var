@@ -10,6 +10,10 @@
     "get-set-var"
   ],
   "author": "Wang Xiaoqiang <xq21@vip.qq.com>",
+  "bin": {
+    "get-set-var": "index.js",
+    "get-set-var-init": "init.js"
+  },
   "license": "ISC",
   "dependencies": {
     "split-json": "^1.7.5",
